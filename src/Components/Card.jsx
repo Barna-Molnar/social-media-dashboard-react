@@ -48,11 +48,21 @@ const CardStyles = styled.div`
     &__footer {
       display: flex;
       align-items: center;
-      color: ${(p) => p.theme.colors.limeGreen};
+      color: ${(p) =>
+        p.arrow.includes('up')
+          ? p.theme.colors.limeGreen
+          : p.theme.colors.brightRed};
       gap: 5px;
       &--text {
         font-size: 12px;
         font-weight: 700;
+      }
+      &--img {
+        display: flex;
+        align-items: center;
+        transform: ${(p) =>
+          p.arrow.includes('up') ? 'translate(0, 25%)' : 'translate(0, 55%)'};
+        /* text-align: center; */
       }
     }
   } // card end
@@ -66,26 +76,31 @@ const CardStyles = styled.div`
   }
 `;
 
-export default function Card({ socialMedia }) {
-  console.log(socialMedia);
+export default function Card({
+  socialMedia,
+  icon,
+  arrow,
+  sum,
+  title = 'followers',
+  views,
+}) {
+  console.log(arrow);
   return (
-    <CardStyles socialMedia={socialMedia}>
+    <CardStyles socialMedia={socialMedia} arrow={arrow}>
       <div className="card">
         <div className="card__header">
-          <img
-            className="card__header--img"
-            src={facebook}
-            alt="facebook-icon"
-          />
+          <img className="card__header--img" src={icon} alt="facebook-icon" />
           <h5 className="card__header--name">@nathan</h5>
         </div>
         <div className="card__body">
-          <p className="view">1987</p>
-          <h3>Followers</h3>
+          <p className="view">{sum}</p>
+          <h3>{title}</h3>
         </div>
         <div className="card__footer">
-          <img className="card__footer--img" src={iconUp} alt="" />
-          <p className="card__footer--text">12 Today</p>
+          <div className="card__footer--img">
+            <img src={arrow} alt="arrow-icon" />
+          </div>
+          <p className="card__footer--text">{views} Today</p>
         </div>
       </div>
     </CardStyles>
