@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Dashboard from './Components/Dashboard';
 import Navbar from './Components/Navbar';
 
 const AppStyles = styled.div`
-  .container {
+  .outer-container {
     padding: 5rem 15rem;
     width: 100vw;
     height: 100vh;
@@ -22,8 +23,9 @@ function App() {
         <div className="topBg"></div>
         <div className="bottomBg"></div>
       </div> */}
-      <div className="container">
+      <div className="outer-container">
         <Navbar />
+        <Dashboard />
       </div>
     </AppStyles>
   );

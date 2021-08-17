@@ -23,7 +23,7 @@ const NavBarStyls = styled.div`
     align-items: center;
 
     .btnLabel {
-      color: ${(p) => p.theme.darkMode.colorText};
+      color: ${(p) => p.theme.darkMode.blueText};
       font-weight: 700;
       font-size: 1.2rem;
     }

@@ -5,13 +5,13 @@ const ToggleButtonStyles = styled.div`
   display: flex;
   input[type='checkbox'] {
     position: relative;
-    width: 3.7rem;
-    height: 2rem;
+    width: 4.2rem;
+    height: 2.2rem;
     -webkit-appearance: none;
     background: ${(p) => p.theme.darkMode.toggle};
     outline: none;
     transition: 0.5s;
-    border-radius: 10px;
+    border-radius: 50px;
     /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4); */
     margin: 0 1rem 0 1rem;
   }
