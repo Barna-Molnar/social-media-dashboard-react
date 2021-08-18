@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import facebook from '../images/icon-facebook.svg';
-import iconUp from '../images/icon-up.svg';
 
 const CardStyles = styled.div`
   .card {
     position: relative;
     padding: 2rem 6rem;
     width: 100%;
-    height: 200px;
+    height: 215px;
     border-radius: 4px;
     background-color: ${(p) => p.theme.darkMode.cardBackground};
     overflow: hidden;
@@ -33,7 +31,8 @@ const CardStyles = styled.div`
       flex-direction: column;
       align-items: center;
       .view {
-        font-size: 5rem;
+        margin-top: 1rem;
+        font-size: 5.5rem;
         font-weight: 800;
         color: ${(p) => p.theme.darkMode.colorText};
       }
