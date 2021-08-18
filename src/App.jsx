@@ -5,10 +5,30 @@ import Navbar from './Components/Navbar';
 import OverViews from './Components/OverViews';
 
 const AppStyles = styled.div`
+  position: relative;
+  height: 100vh;
+  .background {
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    isolation: isolate;
+    .topBg {
+      width: 100vw;
+      height: 30%;
+      background-color: ${(p) => p.theme.darkMode.topBackground};
+    }
+    .bottomBg {
+      width: 100vw;
+      height: 70%;
+      background-color: ${(p) => p.theme.darkMode.background};
+    }
+  }
   .outer-container {
+    margin: 0 auto;
     padding: 5rem 15rem;
     width: 100vw;
-    height: 100vh;
+    max-width: 1440px;
+    height: 100%;
     /* background-color: aqua; */
     z-index: 1;
     display: flex;
@@ -28,15 +48,15 @@ const AppStyles = styled.div`
 function App() {
   return (
     <AppStyles>
-      {/* <div className="background">
-        <div className="topBg"></div>
-        <div className="bottomBg"></div>
-      </div> */}
       <div className="outer-container">
         <Navbar />
         <Dashboard />
         <h2 className="overView__title">Overview - Today</h2>
         <OverViews />
+      </div>
+      <div className="background">
+        <div className="topBg"></div>
+        <div className="bottomBg"></div>
       </div>
     </AppStyles>
   );

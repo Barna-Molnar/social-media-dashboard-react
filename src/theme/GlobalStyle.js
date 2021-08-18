@@ -9,9 +9,17 @@ const GlobalStyles = createGlobalStyle`
 html {
   font-size: 10px;
   font-family: 'Inter', sans-serif;
+  min-height: 100%;
 
 }
-.background {
+
+body {
+  min-height: 100vh;
+}
+#root {
+  height: 100vh;
+}
+/* .background {
     position: absolute;
     z-index: -1;
     isolation: isolate;
@@ -25,7 +33,7 @@ html {
       height: 70vh;
       background-color: ${(p) => p.theme.darkMode.background};
     }
-  }
+  } */
 
 
 `

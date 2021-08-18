@@ -10,10 +10,10 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={Theme}>
       <GlobalStyles />
-      <div className="background">
+      {/* <div className="background">
         <div className="topBg"></div>
         <div className="bottomBg"></div>
-      </div>
+      </div> */}
       <App />
     </ThemeProvider>
   </React.StrictMode>,

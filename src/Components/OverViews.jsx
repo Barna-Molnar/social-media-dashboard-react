@@ -10,8 +10,9 @@ import iconDown from '../images/icon-down.svg';
 
 const OverViewStyles = styled.div`
   width: 100%;
+  max-width: 1440px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(calc(1000px / 4), 1fr));
   gap: 2rem;
 `;
 
