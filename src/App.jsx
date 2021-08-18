@@ -24,8 +24,10 @@ const AppStyles = styled.div`
   .overView__title {
     align-self: flex-start;
     margin-top: 3rem;
-    font-size: 3rem;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
     color: ${(p) => p.theme.darkMode.colorText};
+    margin: 5rem 0 3rem 0;
   }
   .overView-container {
     width: 100%;
@@ -56,45 +58,45 @@ function App() {
           />
           <OverviewCard
             socialMedia={facebook}
-            title={'Page Views'}
-            sum={'87'}
-            movement={{ icon: iconUp, num: 3 }}
+            title={'Likes'}
+            sum={'52'}
+            movement={{ icon: iconDown, num: 2 }}
           />
           <OverviewCard
             socialMedia={instagram}
-            title={'Page Views'}
-            sum={'87'}
-            movement={{ icon: iconUp, num: 3 }}
+            title={'likes'}
+            sum={'5462'}
+            movement={{ icon: iconUp, num: 2257 }}
           />
           <OverviewCard
             socialMedia={instagram}
-            title={'Page Views'}
-            sum={'87'}
-            movement={{ icon: iconUp, num: 3 }}
+            title={'Profile  Views'}
+            sum={'52k'}
+            movement={{ icon: iconUp, num: 1375 }}
           />
           <OverviewCard
             socialMedia={twitter}
-            title={'Page Views'}
-            sum={'87'}
-            movement={{ icon: iconUp, num: 3 }}
+            title={'Retweets'}
+            sum={'117'}
+            movement={{ icon: iconUp, num: 303 }}
           />
           <OverviewCard
             socialMedia={twitter}
-            title={'Page Views'}
-            sum={'87'}
-            movement={{ icon: iconUp, num: 3 }}
+            title={'Likes'}
+            sum={'507'}
+            movement={{ icon: iconUp, num: 563 }}
           />
           <OverviewCard
             socialMedia={youtube}
-            title={'Page Views'}
-            sum={'87'}
-            movement={{ icon: iconUp, num: 3 }}
+            title={'Likes'}
+            sum={'107'}
+            movement={{ icon: iconDown, num: 19 }}
           />
           <OverviewCard
             socialMedia={youtube}
-            title={'Page Views'}
-            sum={'87'}
-            movement={{ icon: iconUp, num: 3 }}
+            title={'Total Views'}
+            sum={'1407'}
+            movement={{ icon: iconDown, num: 12 }}
           />
         </div>
       </div>

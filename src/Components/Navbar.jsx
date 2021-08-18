@@ -6,14 +6,15 @@ const NavBarStyls = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5rem;
 
   .navBar {
     &__title {
-      font-size: 2.2rem;
+      font-size: 2.6rem;
       color: ${(p) => p.theme.darkMode.colorText};
     }
     &__subTitle {
-      font-size: 1.2rem;
+      font-size: 15px;
       color: ${(p) => p.theme.darkMode.blueText};
     }
   }

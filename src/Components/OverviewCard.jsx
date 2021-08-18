@@ -39,6 +39,10 @@ const OverViewCardStyles = styled.div`
         p.arrow.includes('up')
           ? p.theme.colors.limeGreen
           : p.theme.colors.brightRed};
+      img {
+        transform: ${(p) =>
+          p.arrow.includes('up') ? 'translate(0, 25%)' : 'translate(0, 55%)'};
+      }
     }
   }
 `;
