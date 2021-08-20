@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const OverViewCardStyles = styled.div`
+  --mode: ${(p) => p.mode};
   padding: 2.5rem 2.5rem 1.5rem 2.5rem;
   width: 100%;
   height: 125px;
   border-radius: 8px;
-  background-color: ${(p) =>
-    p.theme[p.isdark ? 'darkMode' : 'darkMode'].cardBackground};
+  color: ${(p) => console.log(p.theme.mode)};
+  background-color: ${(p) => p.theme[p.theme.mode].cardBackground};
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -18,7 +19,7 @@ const OverViewCardStyles = styled.div`
     &__title {
       font-size: 14px;
       font-weight: 700;
-      color: ${(p) => p.theme.darkMode.blueText};
+      color: ${(p) => p.theme[p.theme.mode].blueText};
     }
   }
   .summary {
@@ -28,7 +29,7 @@ const OverViewCardStyles = styled.div`
     &__views {
       font-size: 3rem;
       font-weight: 700;
-      color: ${(p) => p.theme.darkMode.colorText};
+      color: ${(p) => p.theme[p.theme.mode].colorText};
     }
     &__movement {
       display: flex;

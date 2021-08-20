@@ -7,8 +7,11 @@ import Theme from './theme/theme';
 import GlobalStyles from './theme/GlobalStyle'
 
 ReactDOM.render(
+
   <React.StrictMode>
+
     <ThemeProvider theme={Theme}>
+
       <GlobalStyles />
       {/* <div className="background">
         <div className="topBg"></div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import OverviewCard from '../Components/OverviewCard';
 import facebook from '../images/icon-facebook.svg';
 import twitter from '../images/icon-twitter.svg';
@@ -16,58 +16,60 @@ const OverViewStyles = styled.div`
   gap: 2rem;
 `;
 
-function OverViews() {
+function OverViews({ mode }) {
   return (
-    <OverViewStyles>
-      <OverviewCard
-        socialMedia={facebook}
-        title={'Page Views'}
-        sum={'87'}
-        movement={{ icon: iconUp, num: 3 }}
-      />
-      <OverviewCard
-        socialMedia={facebook}
-        title={'Likes'}
-        sum={'52'}
-        movement={{ icon: iconDown, num: 2 }}
-      />
-      <OverviewCard
-        socialMedia={instagram}
-        title={'likes'}
-        sum={'5462'}
-        movement={{ icon: iconUp, num: 2257 }}
-      />
-      <OverviewCard
-        socialMedia={instagram}
-        title={'Profile  Views'}
-        sum={'52k'}
-        movement={{ icon: iconUp, num: 1375 }}
-      />
-      <OverviewCard
-        socialMedia={twitter}
-        title={'Retweets'}
-        sum={'117'}
-        movement={{ icon: iconUp, num: 303 }}
-      />
-      <OverviewCard
-        socialMedia={twitter}
-        title={'Likes'}
-        sum={'507'}
-        movement={{ icon: iconUp, num: 563 }}
-      />
-      <OverviewCard
-        socialMedia={youtube}
-        title={'Likes'}
-        sum={'107'}
-        movement={{ icon: iconDown, num: 19 }}
-      />
-      <OverviewCard
-        socialMedia={youtube}
-        title={'Total Views'}
-        sum={'1407'}
-        movement={{ icon: iconDown, num: 12 }}
-      />
-    </OverViewStyles>
+    <ThemeProvider theme={{ mode: mode }}>
+      <OverViewStyles>
+        <OverviewCard
+          socialMedia={facebook}
+          title={'Page Views'}
+          sum={'87'}
+          movement={{ icon: iconUp, num: 3 }}
+        />
+        <OverviewCard
+          socialMedia={facebook}
+          title={'Likes'}
+          sum={'52'}
+          movement={{ icon: iconDown, num: 2 }}
+        />
+        <OverviewCard
+          socialMedia={instagram}
+          title={'likes'}
+          sum={'5462'}
+          movement={{ icon: iconUp, num: 2257 }}
+        />
+        <OverviewCard
+          socialMedia={instagram}
+          title={'Profile  Views'}
+          sum={'52k'}
+          movement={{ icon: iconUp, num: 1375 }}
+        />
+        <OverviewCard
+          socialMedia={twitter}
+          title={'Retweets'}
+          sum={'117'}
+          movement={{ icon: iconUp, num: 303 }}
+        />
+        <OverviewCard
+          socialMedia={twitter}
+          title={'Likes'}
+          sum={'507'}
+          movement={{ icon: iconUp, num: 563 }}
+        />
+        <OverviewCard
+          socialMedia={youtube}
+          title={'Likes'}
+          sum={'107'}
+          movement={{ icon: iconDown, num: 19 }}
+        />
+        <OverviewCard
+          socialMedia={youtube}
+          title={'Total Views'}
+          sum={'1407'}
+          movement={{ icon: iconDown, num: 12 }}
+        />
+      </OverViewStyles>
+    </ThemeProvider>
   );
 }
 

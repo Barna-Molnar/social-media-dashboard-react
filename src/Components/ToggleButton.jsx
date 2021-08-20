@@ -8,17 +8,17 @@ const ToggleButtonStyles = styled.div`
     width: 4.2rem;
     height: 2.2rem;
     -webkit-appearance: none;
-    background: ${(p) => p.theme.darkMode.toggle};
+    background: ${(p) => p.theme.colors.toggle};
     outline: none;
     transition: 0.5s;
     border-radius: 50px;
     /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4); */
     margin: 0 1rem 0 1rem;
   }
-  input:checked[type='checkbox'] {
+  /* input:checked[type='checkbox'] {
     background: var(--soft-cyan);
-    /* box-shadow: inset 0 0 5px hsla(174, 86%, 45%, 1); */
-  }
+    box-shadow: inset 0 0 5px hsla(174, 86%, 45%, 1);
+  } */
 
   input[type='checkbox']:before {
     content: '';
@@ -28,12 +28,12 @@ const ToggleButtonStyles = styled.div`
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: ${(p) => p.theme.darkMode.topBackground};
+    background: ${(p) => p.theme[p.mode].topBackground};
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     transition: 0.5s;
   }
   input:checked[type='checkbox']:before {
-    left: 1.7rem;
+    left: 2rem;
   }
 
   @media only screen and (max-width: 768px) {
@@ -48,18 +48,14 @@ const ToggleButtonStyles = styled.div`
       top: 4px;
     }
     input:checked[type='checkbox']:before {
-      left: 2.2rem; */
-    }
+      left: 2.2rem;
+    } */
   }
 `;
 
-export default function ToggleButton({ isDark, setIsDark }) {
-  const setMode = () => {
-    return setIsDark(!isDark);
-  };
-
+export default function ToggleButton({ setMode, mode }) {
   return (
-    <ToggleButtonStyles>
+    <ToggleButtonStyles mode={mode}>
       <input type="checkbox" onClick={setMode} />
     </ToggleButtonStyles>
   );

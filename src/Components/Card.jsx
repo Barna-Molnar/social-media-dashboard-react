@@ -8,7 +8,7 @@ const CardStyles = styled.div`
     width: 100%;
     height: 215px;
     border-radius: 4px;
-    background-color: ${(p) => p.theme.darkMode.cardBackground};
+    background-color: ${(p) => p.theme[p.mode].cardBackground};
     overflow: hidden;
 
     display: flex;
@@ -22,7 +22,7 @@ const CardStyles = styled.div`
       justify-content: center;
       &--name {
         font-size: 13px;
-        color: ${(p) => p.theme.darkMode.blueText};
+        color: ${(p) => p.theme[p.mode].blueText};
         margin-left: 1rem;
       }
     } // header end
@@ -34,14 +34,14 @@ const CardStyles = styled.div`
         margin-top: 1rem;
         font-size: 5.5rem;
         font-weight: 800;
-        color: ${(p) => p.theme.darkMode.colorText};
+        color: ${(p) => p.theme[p.mode].colorText};
       }
       h3 {
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
         text-transform: uppercase;
-        color: ${(p) => p.theme.darkMode.blueText};
+        color: ${(p) => p.theme[p.mode].blueText};
       }
     } // body end
     &__footer {
@@ -63,7 +63,7 @@ const CardStyles = styled.div`
           p.arrow.includes('up') ? 'translate(0, 25%)' : 'translate(0, 55%)'};
         /* text-align: center; */
       }
-    }
+    } //footer end
   } // card end
   .card::before {
     content: '';
@@ -76,6 +76,7 @@ const CardStyles = styled.div`
 `;
 
 export default function Card({
+  mode,
   socialMedia,
   icon,
   arrow,
@@ -85,7 +86,7 @@ export default function Card({
 }) {
   console.log(arrow);
   return (
-    <CardStyles socialMedia={socialMedia} arrow={arrow}>
+    <CardStyles socialMedia={socialMedia} arrow={arrow} mode={mode}>
       <div className="card">
         <div className="card__header">
           <img className="card__header--img" src={icon} alt="facebook-icon" />

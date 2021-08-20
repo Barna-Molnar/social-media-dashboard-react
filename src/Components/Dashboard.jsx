@@ -15,10 +15,11 @@ const DashBoardStyles = styled.div`
   gap: 2rem;
 `;
 
-export default function Dashboard() {
+export default function Dashboard({ mode }) {
   return (
     <DashBoardStyles>
       <Card
+        mode={mode}
         socialMedia="facebook"
         icon={facebook}
         arrow={iconUp}
@@ -26,6 +27,7 @@ export default function Dashboard() {
         views={'12'}
       />
       <Card
+        mode={mode}
         socialMedia="twitter"
         icon={twitter}
         arrow={iconUp}
@@ -33,6 +35,7 @@ export default function Dashboard() {
         views={'99'}
       />
       <Card
+        mode={mode}
         socialMedia="instagram"
         icon={instagram}
         arrow={iconUp}
@@ -40,6 +43,7 @@ export default function Dashboard() {
         views={'1099'}
       />
       <Card
+        mode={mode}
         socialMedia="youTube"
         icon={youtube}
         arrow={iconDown}

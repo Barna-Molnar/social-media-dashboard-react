@@ -12,11 +12,11 @@ const NavBarStyls = styled.div`
     line-height: 1.5;
     &__title {
       font-size: 2.6rem;
-      color: ${(p) => p.theme.darkMode.colorText};
+      color: ${(p) => p.theme[p.mode].colorText};
     }
     &__subTitle {
       font-size: 15px;
-      color: ${(p) => p.theme.darkMode.blueText};
+      color: ${(p) => p.theme[p.mode].blueText};
     }
   }
 
@@ -25,7 +25,7 @@ const NavBarStyls = styled.div`
     align-items: center;
 
     .btnLabel {
-      color: ${(p) => p.theme.darkMode.blueText};
+      color: ${(p) => p.theme[p.mode].blueText};
       font-weight: 700;
       font-size: 14px;
     }
@@ -43,16 +43,16 @@ const NavBarStyls = styled.div`
   }
 `;
 
-export default function Navbar() {
+export default function Navbar({ setMode, mode }) {
   return (
-    <NavBarStyls>
+    <NavBarStyls mode={mode}>
       <div className="navBar">
         <h2 className="navBar__title">Social Media Dashboard</h2>
         <h5 className="navBar__subTitle">Total followers: 23,004</h5>
       </div>
       <div className="buttonContainer">
         <label className="btnLabel">Dark Mode</label>
-        <ToggleButton />
+        <ToggleButton setMode={setMode} mode={mode} />
       </div>
     </NavBarStyls>
   );
