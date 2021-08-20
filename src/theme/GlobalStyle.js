@@ -21,6 +21,12 @@ body {
 #root {
   height: 100vh;
 }
+
+@media only screen and (max-width: 820px) {
+  #root {
+    height: 100%;
+  } 
+}
 /* .background {
     position: absolute;
     z-index: -1;

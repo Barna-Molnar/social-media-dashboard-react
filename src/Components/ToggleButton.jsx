@@ -37,7 +37,7 @@ const ToggleButtonStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    input[type='checkbox'] {
+    /* input[type='checkbox'] {
       width: 4rem;
       height: 2.2rem;
       border-radius: 12px;
@@ -48,7 +48,7 @@ const ToggleButtonStyles = styled.div`
       top: 4px;
     }
     input:checked[type='checkbox']:before {
-      left: 2.2rem;
+      left: 2.2rem; */
     }
   }
 `;

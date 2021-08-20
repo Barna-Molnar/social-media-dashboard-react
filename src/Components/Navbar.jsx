@@ -9,6 +9,7 @@ const NavBarStyls = styled.div`
   margin-bottom: 5rem;
 
   .navBar {
+    line-height: 1.5;
     &__title {
       font-size: 2.6rem;
       color: ${(p) => p.theme.darkMode.colorText};
@@ -26,7 +27,18 @@ const NavBarStyls = styled.div`
     .btnLabel {
       color: ${(p) => p.theme.darkMode.blueText};
       font-weight: 700;
-      font-size: 1.2rem;
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 562px) {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    .buttonContainer {
+      margin-top: 2rem;
+      padding: 2rem 0;
+      justify-content: space-between;
+      /* border-top: 1px solid ${(p) => p.theme.darkMode.blueText}; */
+      border-top: 1px solid hsla(228, 34%, 66%, 0.2);
     }
   }
 `;

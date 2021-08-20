@@ -43,6 +43,12 @@ const AppStyles = styled.div`
     color: ${(p) => p.theme.darkMode.colorText};
     margin: 5rem 0 3rem 0;
   }
+
+  @media only screen and (max-width: 562px) {
+    .outer-container {
+      padding: 5rem 2rem;
+    }
+  }
 `;
 
 function App() {
