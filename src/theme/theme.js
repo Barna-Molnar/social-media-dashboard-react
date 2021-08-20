@@ -1,4 +1,7 @@
 const theme = {
+
+    isDark: false,
+
     colors: {
         limeGreen: 'hsl(163, 72%, 41%)',
         brightRed: 'hsl(356, 69%, 56%)',

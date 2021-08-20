@@ -24,9 +24,9 @@ const ToggleButtonStyles = styled.div`
     content: '';
     position: absolute;
     left: 3px;
-    top: 3px;
-    width: 15px;
-    height: 15px;
+    top: 2px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background: ${(p) => p.theme.darkMode.topBackground};
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */

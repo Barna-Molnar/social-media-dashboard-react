@@ -6,7 +6,7 @@ import OverViews from './Components/OverViews';
 
 const AppStyles = styled.div`
   position: relative;
-  height: 100vh;
+  height: 100%;
   .background {
     inset: 0;
     position: absolute;

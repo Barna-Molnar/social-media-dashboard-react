@@ -6,7 +6,8 @@ const OverViewCardStyles = styled.div`
   width: 100%;
   height: 125px;
   border-radius: 8px;
-  background-color: ${(p) => p.theme.darkMode.cardBackground};
+  background-color: ${(p) =>
+    p.theme[p.isdark ? 'darkMode' : 'darkMode'].cardBackground};
   overflow: hidden;
   display: flex;
   flex-direction: column;

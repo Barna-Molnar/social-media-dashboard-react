@@ -10,6 +10,8 @@ html {
   font-size: 10px;
   font-family: 'Inter', sans-serif;
   min-height: 100%;
+  min-height: -webkit-fill-available;
+  
 
 }
 
