@@ -54,4 +54,37 @@ export const overViewCardsData = [
         movement: { icon: iconDown, num: 12 },
     },
 ];
-// export default overViewCardsData
+
+export const dashBoardCArdsData = [
+
+    {
+        socialMedia: 'facebook',
+        icon: facebook,
+        arrow: iconUp,
+        sum: 1987,
+        views: 12,
+        title: 'subscribers'
+    },
+    {
+        socialMedia: 'instagram',
+        icon: instagram,
+        arrow: iconUp,
+        sum: 1044,
+        views: 99
+    },
+    {
+        socialMedia: 'twitter',
+        icon: twitter,
+        arrow: iconUp,
+        sum: '11k',
+        views: 1099
+    }, {
+        socialMedia: 'youtube',
+        icon: youtube,
+        arrow: iconDown,
+        sum: 8239,
+        views: 144
+    }
+
+
+]
