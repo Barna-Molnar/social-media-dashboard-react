@@ -19,10 +19,10 @@ body {
   min-height: 100vh;
 }
 #root {
-  /* height: 100vh; */
+  height: 100vh;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1080px) {
   #root {
     height: 100%;
   } 
