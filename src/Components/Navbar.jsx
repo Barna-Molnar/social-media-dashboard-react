@@ -52,7 +52,9 @@ export default function Navbar({ setMode, mode }) {
         <h5 className="navBar__subTitle">Total followers: 23,004</h5>
       </div>
       <div className="buttonContainer">
-        <label className="btnLabel">Dark Mode</label>
+        <label className="btnLabel">
+          {mode === 'darkMode' ? 'Dark Mode' : 'Light Mode'}
+        </label>
         <ToggleButton setMode={setMode} mode={mode} />
       </div>
     </NavBarStyls>
