@@ -15,6 +15,8 @@ const CardStyles = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transition: all 0.2s;
+    cursor: pointer;
 
     &__header {
       display: flex;
@@ -61,7 +63,6 @@ const CardStyles = styled.div`
         align-items: center;
         transform: ${(p) =>
           p.arrow.includes('up') ? 'translate(0, 25%)' : 'translate(0, 55%)'};
-        /* text-align: center; */
       }
     } //footer end
   } // card end
@@ -72,6 +73,9 @@ const CardStyles = styled.div`
     width: 100%;
     height: 4px;
     background: ${(p) => p.theme.colors[p.socialMedia]};
+  }
+  .card:hover {
+    background-color: ${(p) => p.theme[p.mode].hover};
   }
 `;
 

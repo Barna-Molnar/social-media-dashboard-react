@@ -30,14 +30,15 @@ const NavBarStyls = styled.div`
       font-size: 14px;
     }
   }
+
   @media only screen and (max-width: 562px) {
     flex-direction: column;
     margin-bottom: 3rem;
+
     .buttonContainer {
       margin-top: 2rem;
       padding: 2rem 0;
       justify-content: space-between;
-      /* border-top: 1px solid ${(p) => p.theme.darkMode.blueText}; */
       border-top: 1px solid hsla(228, 34%, 66%, 0.2);
     }
   }

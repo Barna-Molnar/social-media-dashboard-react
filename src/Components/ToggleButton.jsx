@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const ToggleButtonStyles = styled.div`
   display: flex;
+  cursor: pointer;
   input[type='checkbox'] {
     position: relative;
     width: 4.2rem;
@@ -12,13 +13,8 @@ const ToggleButtonStyles = styled.div`
     outline: none;
     transition: 0.5s;
     border-radius: 50px;
-    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4); */
     margin: 0 1rem 0 1rem;
   }
-  /* input:checked[type='checkbox'] {
-    background: var(--soft-cyan);
-    box-shadow: inset 0 0 5px hsla(174, 86%, 45%, 1);
-  } */
 
   input[type='checkbox']:before {
     content: '';

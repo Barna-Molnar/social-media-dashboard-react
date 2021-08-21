@@ -29,7 +29,6 @@ const AppStyles = styled.div`
     width: 100vw;
     max-width: 1440px;
     height: 100%;
-    /* background-color: aqua; */
     z-index: 1;
     display: flex;
     flex-direction: column;

@@ -17,6 +17,7 @@ const theme = {
         cardBackground: 'hsl(228, 28%, 20%)',
         blueText: 'hsl(228, 34%, 66%)',
         colorText: 'hsl(0, 0%, 100%)',
+        hover: 'hsl(228, 28%, 25%)',
 
     },
     lightMode: {
@@ -25,7 +26,7 @@ const theme = {
         cardBackground: 'hsl(227, 47%, 96%)',
         blueText: 'hsl(228, 12%, 44%)',
         colorText: 'hsl(230, 17%, 14%)',
-
+        hover: 'hsl(227, 47%, 91%)',
     }
 }
 export default theme
