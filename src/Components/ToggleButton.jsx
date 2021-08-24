@@ -25,27 +25,10 @@ const ToggleButtonStyles = styled.div`
     height: 18px;
     border-radius: 50%;
     background: ${(p) => p.theme[p.mode].topBackground};
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     transition: 0.5s;
   }
   input:checked[type='checkbox']:before {
     left: 2rem;
-  }
-
-  @media only screen and (max-width: 768px) {
-    /* input[type='checkbox'] {
-      width: 4rem;
-      height: 2.2rem;
-      border-radius: 12px;
-    }
-    input[type='checkbox']:before {
-      width: 14px;
-      height: 14px;
-      top: 4px;
-    }
-    input:checked[type='checkbox']:before {
-      left: 2.2rem;
-    } */
   }
 `;
 

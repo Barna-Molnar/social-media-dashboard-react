@@ -4,6 +4,8 @@ import instagram from '../images/icon-instagram.svg';
 import youtube from '../images/icon-youtube.svg';
 import iconUp from '../images/icon-up.svg';
 import iconDown from '../images/icon-down.svg';
+
+
 export const overViewCardsData = [
     {
         socialMedia: facebook,
@@ -84,7 +86,8 @@ export const dashBoardCArdsData = [
         arrow: iconDown,
         sum: 8239,
         views: 144
-    }
+    },
+
 
 
 ]

@@ -20,7 +20,7 @@ export default function Dashboard({ mode }) {
             socialMedia={card.socialMedia}
             icon={card.icon}
             arrow={card.arrow}
-            title={card.title ? card.title : ''}
+            title={card.title ? card.title : undefined}
             sum={card.sum}
             views={card.views}
           />

@@ -6,7 +6,7 @@ import OverViews from './Components/OverViews';
 
 const AppStyles = styled.div`
   position: relative;
-  height: 100%;
+
   .background {
     inset: 0;
     position: absolute;
@@ -14,12 +14,12 @@ const AppStyles = styled.div`
     isolation: isolate;
     .topBg {
       width: 100vw;
-      height: 30%;
+      height: 30vh;
       background-color: ${(p) => p.theme[p.mode].topBackground};
     }
     .bottomBg {
       width: 100vw;
-      height: 70%;
+      height: 100vh;
       background-color: ${(p) => p.theme[p.mode].background};
     }
   }

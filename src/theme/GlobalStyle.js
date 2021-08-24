@@ -25,6 +25,7 @@ body {
 @media only screen and (max-width: 1080px) {
   #root {
     height: 100%;
+
   } 
 }
 /* .background {
